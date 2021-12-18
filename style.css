@@ -83,17 +83,13 @@ a {
     transform: scale(1.05);
     transition: 1s;
 }
-.nomes {
-    margin-left: 6%;
-    margin-right: 7%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.nomes p {
+
+.cards p {
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer {
     display: flex;
@@ -109,6 +105,30 @@ footer p {
     color:darkgoldenrod;
     text-align: center;
     font-size: 25px;
+}
+@media (max-width: 1200px) {
+    .titulo {
+        font-size: 25px;
+    }
+    ul, h1 {
+        flex-grow: 1;
+    }
+    ul {
+        flex-grow: 4;
+    }
+    .itens {
+        flex-grow: 1;
+    }
+    .itens > a {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-gato, .logo-cao {
+        display: none;
+    }
 }
 
 @media (max-width: 700px) {
@@ -143,18 +163,6 @@ footer p {
     width: 250px;
     height: 330px;
     }
-    .nomes {
-        margin-left: 6%;
-        margin-right: 7%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .nomes p {
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
 
     footer {
         display: flex;
@@ -171,31 +179,3 @@ footer p {
         font-size: 18px;
       }
    }
-@media (max-width: 626px) {
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 180px;
-        background-color: rgb(63, 26, 26);
-    }
-    .nomes {
-        margin-left: 6%;
-        margin-right: 7%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .nomes p {
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    footer p {
-        color:darkgoldenrod;
-        text-align: center;
-        font-size: 18px;
-      }
-}
